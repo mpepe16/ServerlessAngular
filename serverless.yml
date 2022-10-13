@@ -34,5 +34,6 @@ functions:
   api:
     handler: lambda.ssrserverless
     events:
-      - http: ANY /{proxy+}
-      - http: ANY /
+      - http:
+        - method: GET
+      
